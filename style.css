@@ -22,7 +22,6 @@ body {
 /* GLOBAL */
 
 /* header and navigation bar */
-
 .header {
   margin: 0px auto;
   width: 100vw;
@@ -41,8 +40,8 @@ body {
   letter-spacing: 1px;
   font-size: 1.5rem;
 }
+
 .navbar-links li {
-  
   display: inline-block;
   list-style-type: none;
   padding: 10px;
@@ -64,14 +63,18 @@ body {
   border-bottom: 3px solid black;
 }
 
+
 h2 {
+  font-size: 2.5em;
   text-align: center;
 }
+
+
 /* WRAPPER */
 .wrapper {
   background-color: black;
-  width:100vw;
-  height: 85vh;
+  width: 100vw;
+  height: 100vh;
   color: white;
   display: flex;
   justify-content: center;
@@ -84,6 +87,42 @@ h2 {
 }
 
 /* PROJECT GRID */
-#projects span{
-  cursor: pointer;
+#projects {
+  margin: 25px auto;
 }
+
+.project-categories {
+  margin: 25px auto;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.project-categories span{
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.project-tile-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px 25px;
+
+  place-content: center;
+}
+
+.project-tile {
+  width: 450px;
+  height: 300px;
+  background-color: blueviolet;
+  border: solid 3px black;
+}
+
+.project-tile:nth-child(odd) {
+  background-color: blue;
+}
+
+
