@@ -34,6 +34,8 @@ body {
   background-color: white;
   opacity: .8;
   color: black;
+
+  position: fixed;
 }
 
 .logo {
@@ -52,6 +54,15 @@ body {
   text-decoration: none;
 }
 
+#resume-link {
+  background: rgb(197, 197, 197); 
+  border-radius: 5px;
+  font-size: .99em;
+}
+#resume-link a {
+  padding: 5px;
+  color: white;
+}
 .social-media-link {
   color: black;
   text-decoration: none;
@@ -72,10 +83,11 @@ h2 {
 
 /* WRAPPER */
 .wrapper {
-  background-color: black;
+  background-image: url("blob.svg");
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -88,7 +100,7 @@ h2 {
 
 /* PROJECT GRID */
 #projects {
-  margin: 25px auto;
+  margin: 50px auto;
 }
 
 .project-categories {
@@ -126,3 +138,70 @@ h2 {
 }
 
 
+/* ABOUT ME */ 
+#about {
+  margin: 50px auto;
+}
+
+#about h2 {
+  margin: 10px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile img {
+  border: black 3px solid;
+  width: 300px;
+}
+
+.info {
+  width: 50%;
+  margin: auto 0;
+}
+
+.info > * {
+  padding: 10px 0px;
+}
+.info .summary {
+  line-height: 30px;
+}
+
+.info .social-media-portfolio .social-media-link {
+  padding: 0px;
+  padding-right: 10px;
+}
+
+.info .latest > *{
+  padding: 2.5px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px auto;
+}
+.skill {
+  width: 11.5em;
+  padding: 10px;
+  background: black;
+  color: white;
+}
+.skill > * {
+  margin: 10px;
+}
+.skill i {
+  width: 10px;
+}
+.skill span{
+  font-weight: 700;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
