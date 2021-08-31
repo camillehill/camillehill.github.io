@@ -55,7 +55,7 @@ body {
 }
 
 #resume-link {
-  background: rgb(197, 197, 197); 
+  background: var(--secondary-color);
   border-radius: 5px;
   font-size: .99em;
 }
@@ -78,24 +78,33 @@ body {
 h2 {
   font-size: 2.5em;
   text-align: center;
+  color: var(--secondary-color);
 }
 
 
 /* WRAPPER */
 .wrapper {
-  background-image: url("blob.svg");
-  background-repeat: no-repeat;
+  background-image: url("webb.png");
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   color: black;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.wrapper h1 {
-  font-size: 3em;
-  padding: 3em;
+.topic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+
+  height: 10px;
+  padding: 0 10px;
+}
+.topic img {
+  width: 10em;
 }
 
 /* PROJECT GRID */
@@ -129,15 +138,12 @@ h2 {
 .project-tile {
   width: 450px;
   height: 300px;
-  background-color: blueviolet;
-  border: solid 3px black;
+  background-color: lightgray;
 }
 
-.project-tile:nth-child(odd) {
-  background-color: blue;
+.overlay {
+  background-color: rgba(163, 163, 163, 0.596);
 }
-
-
 /* ABOUT ME */ 
 #about {
   margin: 50px auto;
@@ -153,8 +159,10 @@ h2 {
 }
 
 .profile img {
-  border: black 3px solid;
-  width: 300px;
+  margin: auto 0;
+  align-self: center;
+  width: 25%;
+  height: 10%;
 }
 
 .info {
@@ -187,7 +195,7 @@ h2 {
 .skill {
   width: 11.5em;
   padding: 10px;
-  background: black;
+  background: var(--secondary-color);
   color: white;
 }
 .skill > * {
